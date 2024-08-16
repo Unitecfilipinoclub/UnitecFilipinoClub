@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNITEC FILIPINO CLUB</title>
+    <style>
+        /* Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #dabb84; /* Lighter warm color */
+            color: #ffffff;
+            padding: 50px 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        header h1 {
+            font-size: 60px;
+            margin: 0;
+            letter-spacing: 2px;
+            animation: fadeInDown 1s ease-out;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        header h1 img {
+            height: 200px; /* 2x logo size */
+            margin-right: 20px;
+        }
+        nav {
+            background-color: #ffffff;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: #d32f2f;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ff5252;
+        }
+        .hero {
+            background-image: url('your-featured-image.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            animation: fadeInUp 1s ease-out;
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 30px;
+            border-radius: 10px;
+        }
+        .content {
+            padding: 60px 20px;
+        }
+        .content h2 {
+            color: #d32f2f;
+            font-size: 32px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            border-left: 8px solid #ff5252;
+            padding-left: 15px;
+            animation: fadeInLeft 1s ease-out;
+        }
+        .content p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            animation: fadeInRight 1s ease-out;
+        }
+        .about-us, .events, .join-us, .gallery, .contact-us {
+            margin-bottom: 60px;
+        }
+        .gallery img {
+            width: 20%;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+        footer {
+            background-color: #333;
+            color: #ffffff;
+            text-align: center;
+            padding: 30px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            animation: fadeInUp 1s ease-out;
+        }
+        footer p {
+            margin: 0;
+        }
+
+        /* Philippine Flag */
+        .flag-container {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        .flag-container img {
+            height: 160px; /* 2x flag size */
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="flag-container">
+        <img src="philippine-flag.png" alt="Philippine Flag">
+    </div>
+    <h1><img src="ufc-logo.png" alt="UFC Logo"> Unitec Filipino Club</h1>
+</header>
+
+<nav>
+    <a href="#about-us">About Us</a>
+    <a href="#events">Events</a>
+    <a href="#join-us">Join Us</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact-us">Contact Us</a>
+</nav>
+
+<div class="hero">
+    <h1>Embracing Filipino Heritage, Building Community</h1>
+</div>
+
+<div class="content">
+    <section id="about-us" class="about-us">
+        <h2>About Us</h2>
+        <p>Welcome to the Unitec Filipino Club, where we celebrate the rich and vibrant culture of the Philippines. Our club is a diverse and inclusive community that brings together students from all backgrounds to explore and embrace Filipino heritage. Through various cultural events, educational workshops, and social gatherings, we provide a platform for members to connect, learn, and share their love for Filipino traditions. Whether you're of Filipino descent or simply interested in the culture, you'll find a welcoming home in our club. Together, we aim to foster a deeper understanding and appreciation of our unique cultural identity, while creating lasting memories and friendships along the way.</p>
+    </section>
+
+    <section id="events" class="events">
+        <h2>Events</h2>
+        <p>Our events are the heart and soul of the Unitec Filipino Club. We host a wide range of activities designed to celebrate our heritage, build community, and have a great time. From our signature Salo-Salo gatherings, where we come together to enjoy authentic Filipino cuisine, to our lively Filipino Movie Nights, there's always something exciting happening. We also organize traditional dance workshops, cooking classes, and language lessons to help members deepen their connection to Filipino culture. And, of course, we never miss a chance to celebrate major Filipino holidays and festivals, such as Buwan ng Wika and Christmas. No matter what event you attend, you're guaranteed to leave with a smile on your face and a stronger sense of belonging.</p>
+    </section>
+
+    <section id="join-us" class="join-us">
+        <h2>Join Us</h2>
+        <p>Becoming a member of the Unitec Filipino Club is more than just joining a student organization—it's about being part of a family. We welcome students from all walks of life who are interested in experiencing and celebrating Filipino culture. As a member, you'll have access to exclusive events, workshops, and resources that will enhance your university experience. You'll also have the opportunity to make lifelong friends, develop leadership skills, and contribute to the vibrant Filipino community at Unitec. Membership is open year-round, so whether you're a new student or a returning one, there's always a place for you here. To join, simply reach out to us via email or attend our next event—our doors are always open!</p>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2>Gallery</h2>
+        <p>Our gallery showcases the highlights of our past events and activities. Each photo tells a story of camaraderie, joy, and cultural pride. Take a look and see the vibrant community we've built together!</p>
+        <img src="event1.jpg" alt="Event 1">
+        <img src="event2.jpg" alt="Event 2">
+        <img src="event3.jpg" alt="Event 3">
+        <img src="event4.jpg" alt="Event 4">
+        <img src="event5.jpg" alt="Event 5">
+        <img src="event6.jpg" alt="Event 6">
+        <img src="event7.jpg" alt="Event 7">
+        <img src="event8.jpg" alt="Event 8">
+        <img src="event9.jpg" alt="Event 9">
+        <img src="event10.jpg" alt="Event 10">
+    </section>
+
+    <section id="contact-us" class="contact-us">
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you! Whether you have questions, suggestions, or just want to say hello, feel free to reach out. You can contact us via email, follow us on social media, or drop by one of our events. We're here to help and look forward to connecting with you!</p>
+        <p><strong>Email:</strong> <a href="mailto:unitecfilipinoclub@gmail.com">unitecfilipinoclub@gmail.com</a></p>
+        <p><strong>Instagram:</strong> <a href="https://instagram.com/UnitecFilipinoClub" target="_blank">@UnitecFilipinoClub</a></p>
+        <p><strong>Facebook:</strong> <a href="https://facebook.com/UnitecFilipinoClub" target="_blank">Unitec Filipino Club</a></p>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 Unitec Filipino Club. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
